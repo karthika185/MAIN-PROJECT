@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="asset/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="asset/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="asset/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="asset/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="asset/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="asset/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <style type="text/css">
+    .navbar {
+  padding: 0;
+  margin-top: 35px;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+  left: 200px;
+}
+
+.navbar li + li {
+  margin-left: 30px;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #18d26e;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+  visibility: visible;
+  width: 25px;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+  .navbar ul {
+    display: flex;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+  margin-top: 0;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: relative;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 45px;
+  left: 15px;
+  padding: 10px 0;
+  overflow-y: auto;
+  transition: 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.navbar-mobile li {
+  padding: 12px 20px;
+}
+
+.navbar-mobile li + li {
+  margin: 0;
+}
+
+.navbar-mobile a {
+  font-size: 16px;
+  position: relative;
+}
+
+  </style>
+</head>
+<body>
+
+<nav id="navbar" class="navbar ">
+        <ul>
+          <li><a class="nav-link" href="cust_home.php">Home</a></li>
+          <li><a class="nav-link" href="profile.php">Profile</a></li>
+          <li><a class="nav-link" href="notify.php">Notification</a></li>
+          <li><a class="nav-link" href="customiseform1.php">Send Global Request</a></li>
+          <li><a class="nav-link" href="customiseform.php">Send Boutique Request</a></li>
+          
+
+          <li><a class="nav-link" href="help.php">Help</a></li>
+          <li><a class="nav-link" href="pwdchange.php">Change Password</a></li>
+          <li><a class="nav-link" href="../destroysession.php">Logout</a></li>
+        </ul>
+        
+      </nav>
+      </body>
+</html>
